@@ -1,6 +1,12 @@
 body{
-	background-color: #B72B34;
+	background-color: #dd2f2f;
 }
 h1 {
 	color: #5cb0c2;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
