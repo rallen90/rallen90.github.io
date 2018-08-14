@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Average');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Average', serif;
+	color: #B52C35;
+	line-height: 1.5em;	
+	background-color: #fbf7f5;
+}
+header {
+	background: black;
+	text-align: center;
+	color: #B52C35;
+	padding:20px;
+}
+header img {
+	float: left;
+}
+header nav{
+	float: right;
+}
+nav a {
+	font-family: 'Fjalla One', sans-serif;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #B52C35;
+}
+nav a:hover {
+  color: green;
+}
+li {
+	display: inline;
+	text-decoration: none;
+	text-align: right;
+	padding: 15px;
+}
+h2, h4 {
+	font-family: 'Fjalla One', sans-serif;
+	color: #B52C35;
+}
+.about {
+	background-image: url(../images/interior.jpg);
+    background-size: cover;
+	font-family: 'Average', serif;
+	min-height: 500px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+#slogan {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 40px;
+}
+.clearfix:after {
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
+.menus {
+	background-color: #fbf7f5;
+	padding: 35px;
+	clear: right;
+}
+.menus img {
+	float: left;
+	width: 40%;
+	margin: 15px;
+	padding: 35px;
+}
+.menus p {
+	float: left;
+	font-family: 'Average', serif;
+	color: black;
+	font-size: 15px;
+	line-height: 1.5em;
+	font-weight: 300;
+	width: 40%;
+}
+.menus_right img {
+	float: right;
+	width: 40%;
+	margin: 15px;
+	padding: 35px;
+}
+.menus_right p {
+	font-family: 'Average', serif;
+	color: black;
+	font-size: 15px
+	line-height: 1.5em;
+	font-weight: 300;
+	width: 50%;
+}
+.events {
+	background-color: #fbf7f5;
+	width: 22%;
+	margin: 1.5%;
+	float: left;
+}
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+	text-decoration: underline;
+	padding: 20px;
+}
+.events h3, h4, h5 {
+	text-align: center
+}
+.events img{
+	width: 200px;
+	padding: 35px; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.events p{
+	color: black;
+	line-height: 1.5em;
+	padding: 30px;
+}
+footer {
+	text-align: right
+	background-color: black;
+	padding: 20px;
+	float: right;
+}
+#footer {
+	float: left;
+}
