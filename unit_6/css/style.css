@@ -4,6 +4,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -20,6 +21,7 @@ header {
 }
 header img {
 	float: left;
+	width: 10em;
 }
 header nav{
 	float: right;
@@ -30,19 +32,20 @@ nav a {
 	font-weight: 700;
 	letter-spacing: 2px;
 	color: #B52C35;
+	display: block; 
+	padding: 1em;
 }
 nav a:hover {
   color: green;
 }
 li {
-	display: inline;
+	display: inline-block;
 	text-decoration: none;
-	text-align: right;
-	padding: 15px;
 }
 h2, h4 {
 	font-family: 'Fjalla One', sans-serif;
 	color: #B52C35;
+	margin-top: 2em;
 }
 .about {
 	background-image: url(../images/interior.jpg);
@@ -73,15 +76,24 @@ h2, h4 {
 .menus {
 	background-color: #fbf7f5;
 	padding: 35px;
-	clear: right;
+}
+.menus:nth-of-type(odd){
+	background: none;
+	width: 1200px;
+	margin:auto;
 }
 .menus img {
 	float: left;
+	width: 50%;
+	padding-right: 2em;
+}
+.menus:nth-of-type(odd) img{
+	float: right;
 	width: 40%;
 	margin: 15px;
 	padding: 35px;
 }
-.menus p {
+/*.menus p {
 	float: left;
 	font-family: 'Average', serif;
 	color: black;
@@ -89,7 +101,7 @@ h2, h4 {
 	line-height: 1.5em;
 	font-weight: 300;
 	width: 40%;
-}
+}*/
 .menus_right img {
 	float: right;
 	width: 40%;
@@ -104,10 +116,13 @@ h2, h4 {
 	font-weight: 300;
 	width: 50%;
 }
+.menus_right {
+	padding: 35px;
+ }
 .events {
 	background-color: #fbf7f5;
-	width: 22%;
-	margin: 1.5%;
+	width: 25%;
+	padding: 2em;
 	float: left;
 }
 h3 {
@@ -129,14 +144,16 @@ h3 {
 .events p{
 	color: black;
 	line-height: 1.5em;
-	padding: 30px;
 }
 footer {
 	text-align: right
-	background-color: black;
+	background-color: #fff;
 	padding: 20px;
-	float: right;
 }
-#footer {
+#footerlogo {
 	float: left;
+}
+.wrapper {
+	width:1200px;
+	margin: auto;
 }
