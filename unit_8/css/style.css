@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Average');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Average', serif;
+	color: #B52C35;
+	line-height: 1.5em;	
+	background-color: #fbf7f5;
+	font-size: 16px;
+}
+header {
+	background: black;
+	text-align: center;
+	color: #B52C35;
+	padding:20px;
+}
+header img {
+	float: left;
+	width: 10em;
+}
+header nav{
+	float: right;
+}
+nav a {
+	font-family: 'Fjalla One', sans-serif;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #B52C35;
+	display: block; 
+	padding: 1em;
+}
+nav a:hover {
+  color: green;
+}
+li {
+	display: inline-block;
+	text-decoration: none;
+}
+h2, h4 {
+	font-family: 'Fjalla One', sans-serif;
+	color: #B52C35;
+	margin-top: 2em;
+}
+.about {
+	background-image: url(../images/interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Average', serif;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+.header-overlay {
+	padding: 20px 20px 250px;
+	background-color: rgba(0,0,0,0.5);	
+}
+#slogan {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 40px;
+}
+.clearfix:after {
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
+.menus {
+	background-color: #fbf7f5;
+	padding: 35px;
+}
+.menus p {
+	color: black;
+}
+.menus:nth-of-type(odd){
+	background: none;
+	width: 1200px;
+	margin:auto;
+}
+.menus img {
+	float: left;
+	width: 50%;
+	padding-right: 2em;
+}
+.menus:nth-of-type(odd) img{
+	float: right;
+	width: 40%;
+	margin: 15px;
+	padding: 35px;
+}
+/*.menus p {
+	float: left;
+	font-family: 'Average', serif;
+	color: black;
+	font-size: 15px;
+	line-height: 1.5em;
+	font-weight: 300;
+	width: 40%;
+}*/
+.menus_right img {
+	float: right;
+	width: 40%;
+}
+.menus_right p {
+	font-family: 'Average', serif;
+	color: black;
+	line-height: 1.5em;
+	font-weight: 300;
+	width: 50%;
+}
+.menus_right {
+	padding: 35px;
+ }
+.events {
+	background-color: #fbf7f5;
+	width: 25%;
+	padding: 2em;
+	float: left;
+}
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+	text-decoration: underline;
+	padding: 20px;
+}
+.events h3, h4, h5 {
+	text-align: center
+}
+.events img{
+	width: 100%;
+	padding: 35px; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.events p{
+	color: black;
+	line-height: 1.5em;
+}
+footer {
+	text-align: right;
+	background-color: #fff;
+	padding: 20px;
+}
+#footerlogo {
+	float: left;
+}
+.wrapper {
+	max-width:1200px;
+	margin: auto;
+}
+@media screen and (max-width: 575px) {
+	.header-overlay {
+		padding: 20px 20px 100px;
+		background-color: rgba(0,0,0,0.5);	
+	}
+	.header-overlay p {
+		display: none;
+	}
+	.menus, .menus_right {
+		padding: 20px 10px;
+	}
+	.menus .image-wrapper, .menus_right .image-wrapper {
+		max-height: 300px;
+		overflow: hidden;
+	}
+	.menus img, .menus_right img {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+	.menus_right p {
+    	width: 100%;
+	}
+}
+@media screen and (max-width: 844px) {
+	.header-overlay {
+		padding: 20px 20px 150px;
+		background-color: rgba(0,0,0,0.5);	
+	}
+}
+@media screen and (max-width: 900px) {
+	.events {
+		width: 50%;
+		float: left;
+	}
+}
+
