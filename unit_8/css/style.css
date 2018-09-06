@@ -10,14 +10,12 @@
 body {
 	font-family: 'Average', serif;
 	color: #B52C35;
-	line-height: 1.5em;	
+	line-height: 1.5;	
 	background-color: #fbf7f5;
 	font-size: 16px;
 }
 header {
 	background: black;
-	text-align: center;
-	color: #B52C35;
 	padding:20px;
 }
 header img {
@@ -32,7 +30,7 @@ nav a {
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 2px;
-	color: #B52C35;
+	color: rgba(217, 201, 167, 1);
 	display: block; 
 	padding: 1em;
 }
@@ -61,7 +59,7 @@ h2, h4 {
 }
 .header-overlay {
 	padding: 20px 20px 250px;
-	background-color: rgba(0,0,0,0.5);	
+	background-color: rgba(255,255,255,0.5);	
 }
 #slogan {
 	font-family: 'Fjalla One', sans-serif;
@@ -92,7 +90,7 @@ h2, h4 {
 .menus img {
 	float: left;
 	width: 50%;
-	padding-right: 2em;
+	margin: 1em;
 }
 .menus:nth-of-type(odd) img{
 	float: right;
@@ -129,21 +127,19 @@ h2, h4 {
 	padding: 2em;
 	float: left;
 }
-h3 {
+h2 {
 	text-align: center;
 	font-size: 1.5em;
 	text-decoration: underline;
 	padding: 20px;
 }
-.events h3, h4, h5 {
+.events h2, h3, h4 {
 	text-align: center
 }
 .events img{
 	width: 100%;
-	padding: 35px; 
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto;
 }
 .events p{
 	color: black;
@@ -173,8 +169,7 @@ footer {
 		padding: 20px 10px;
 	}
 	.menus .image-wrapper, .menus_right .image-wrapper {
-		max-height: 300px;
-		overflow: hidden;
+		width: 100%;
 	}
 	.menus img, .menus_right img {
 		float: none;
@@ -185,16 +180,25 @@ footer {
     	width: 100%;
 	}
 }
+@media screen and (max-width: 700px) {
+	.events {
+		float: none;
+		clear: both;
+		width: 100%;
+		margin: 0 auto;
+ 	}
+ }
 @media screen and (max-width: 844px) {
 	.header-overlay {
 		padding: 20px 20px 150px;
-		background-color: rgba(0,0,0,0.5);	
+		background-color: rgba(255,255,255,0.5);	
 	}
 }
 @media screen and (max-width: 900px) {
 	.events {
 		width: 50%;
 		float: left;
+		min-height: 38em;
 	}
 }
 
